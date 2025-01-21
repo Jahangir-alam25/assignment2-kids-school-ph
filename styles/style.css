@@ -44,10 +44,15 @@ a{
     background-color: orange;
     color: white;
     padding: 17px 22px;
-    border-radius: 50%;
+    border-radius: 30px;
     font-weight: 600;
     font-size: 1.5rem;
 
+}
+.chalange{
+    margin-top: -200px;
+    margin-left: 38px;
+    background-color: rgba(60, 216, 232, 1);
 }
 /*  header related styles */
 /* navber related styles */
@@ -57,6 +62,20 @@ a{
   background-color: rgba(247, 247, 247, 1);
   padding: 20px 140px;
 }
+.menu div {
+    height: 4px;
+    background-color: black;
+    margin: 5px 0;
+    border-radius: 25px;
+}
+.menu {
+ width: 30px;
+ display: none;
+}
+.one{
+ width: 30px;
+}
+
 .nav-title{
     font-weight: 700;
     font-size: 2rem;
@@ -113,6 +132,9 @@ a{
     margin-top: 24px;
     margin-bottom: 24px;
 }
+.banner-container img{
+    width: 100%;
+}
 /* main section related styles */
 /* Curriculum related styles */
 .curriculum{
@@ -151,9 +173,10 @@ a{
 .our-stories{
     background-image: url(../images/bg.png), linear-gradient(rgba(247, 247, 247, 1), rgba(247, 247, 247, 1), rgba(255, 235, 200, 1), rgba(255, 235, 200, 1),  rgba(255, 235, 200, 1));
     padding: 60px 140px;
-    text-align: center;
+    
 }
 .our-stories-title{
+    text-align: center;
     font-weight: 700;
     font-size: 2.8rem;
     color: rgba(0, 0, 0, 1);
@@ -225,6 +248,13 @@ a{
 
 /* media query for mobile */
 @media screen and (max-width: 576px) {
+    .navber{
+        justify-content: space-between;
+        padding: 0;
+    }
+    .menu {
+        display: block;
+    }
     .banner{
         flex-direction: column-reverse;
         text-align: center;
