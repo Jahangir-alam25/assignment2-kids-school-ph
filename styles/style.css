@@ -32,6 +32,15 @@
 .linear-gradient-3{
     background-image: linear-gradient(rgba(242, 232, 255, 1), white, white, white,  white);
 }
+.simbol-color{
+    background-color: orange;
+    color: white;
+    padding: 17px 22px;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+}
 
 /* navber related styles */
 .navber{
@@ -101,26 +110,23 @@ a{
     margin-bottom: 24px;
 }
 /* main section related styles */
-main{
-    
-}
 /* Curriculum related styles */
 .curriculum{
     background-image: url(../images/bg.png);
     background-color: rgba(247, 247, 247, 1);
+    padding: 60px 140px;
 }
 .curriculum-title{
     font-weight: 700;
     font-size: 2.8rem;
     color: rgba(0, 0, 0, 1);
-    /* margin-top: 60px; */
     text-align: center;
 }
 .curriculum-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 28px;
-    padding: 80px 140px;
+    margin: 80px 0;
 
 }
 .curriculum-card{
@@ -129,4 +135,81 @@ main{
     box-shadow: 0 0 28px 0 rgba(0, 0, 0, 0.05);
     text-align: center;
     border-radius: 19px;
+}
+.simbol{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+
+}
+/* our stories related styles */
+.our-stories{
+    background-image: url(../images/bg.png), linear-gradient(rgba(247, 247, 247, 1), rgba(247, 247, 247, 1), rgba(255, 235, 200, 1), rgba(255, 235, 200, 1),  rgba(255, 235, 200, 1));
+    padding: 60px 140px;
+    text-align: center;
+}
+.our-stories-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: rgba(0, 0, 0, 1);
+}
+.stories{
+    gap: 18px;
+    margin: 80px 0;
+    justify-content: space-between;
+}
+.story-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+}
+.stories-card-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 1);
+    padding: 58px 38px 47px 38px;
+}
+.stories-card-description{
+    padding: 0 50px 47px 38px;
+    color: rgba(102, 102, 102, 1);
+}
+.story-card{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+
+}
+.story-card img{
+    border-radius: 16px 16px 0 0;
+}
+.story-card-title{
+    padding: 43px 44px 33px 37px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+/* media query for mobile */
+@media screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0;
+    }
+    .display-none{
+        display: none;
+    }
+    .curriculum{
+        padding: 0;
+    }
+    .curriculum-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .our-stories{
+        padding: 0;
+    }
+    .stories{
+        flex-direction: column;
+    }
+    .story-card img{
+        width: 100%;
+    }
 }
