@@ -1,6 +1,6 @@
 *{
-    /* max-width: 1160px;
-    margin: 0 auto; */
+
+    margin: 0;
     
 }
 
@@ -32,6 +32,14 @@
 .linear-gradient-3{
     background-image: linear-gradient(rgba(242, 232, 255, 1), white, white, white,  white);
 }
+.list{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+}
 .simbol-color{
     background-color: orange;
     color: white;
@@ -41,7 +49,7 @@
     font-size: 1.5rem;
 
 }
-
+/*  header related styles */
 /* navber related styles */
 .navber{
   justify-content: space-between;
@@ -58,12 +66,8 @@
     gap: 32px;
     align-items: center;
 }
-.list{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
+
+
 .list-item-1{
     color: orange;
     font-weight: 700;
@@ -187,6 +191,38 @@ a{
     font-weight: 700;
     color: rgba(0, 0, 0, 1);
 }
+/* footer related styles */
+.education-section{
+    background-color: rgba(1, 172, 253, 1);
+    padding: 123px 228px 173px 140px;
+    justify-content: space-between;
+    /* gap: 150px; */
+}
+.education{
+    gap: 10px;
+    align-items: center;
+}
+.education-title{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: white;
+}
+.education-description{
+    font-size: 1.25rem;
+    color: white;
+    margin-top: 35px;
+    margin-bottom: 32px;
+}
+.school-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 32px;
+}
+.item{
+    margin-bottom: 20px;
+}
+
 /* media query for mobile */
 @media screen and (max-width: 576px) {
     .banner{
@@ -211,5 +247,9 @@ a{
     }
     .story-card img{
         width: 100%;
+    }
+    .education-section{
+        flex-direction: column;
+        padding: 25px 0 21px 16px;
     }
 }
