@@ -15,7 +15,7 @@
     display: flex;
 }
 .btn-primary{
-    background-color: orange;
+    background-color: black;
     border-radius: 12px;
     color: rgba(255, 255, 255, 1);
     padding: 10px 60px;
@@ -49,10 +49,35 @@ a{
     font-size: 1.5rem;
 
 }
-.chalange{
-    margin-top: -200px;
+.chalange-btn-1{
+    position: absolute;
+    margin-top: -300px;
     margin-left: 38px;
     background-color: rgba(60, 216, 232, 1);
+    border-radius: 48px;
+    color: rgba(255, 255, 255, 1);
+    padding: 15px 18px;
+    border: none;
+    
+}
+.chalange-btn-all{
+    position: absolute;
+    margin-top: -135px;
+    margin-left: 38px;
+    background-color: rgb(60, 232, 120);
+    border-radius: 48px;
+    color: rgba(255, 255, 255, 1);
+    padding: 15px 18px;
+    border: none;
+}
+.color-1{
+    background-color: aqua;
+}
+.color-2{
+    background-color: blue;
+}
+.color-3{
+    background-color: blueviolet;
 }
 /*  header related styles */
 /* navber related styles */
@@ -214,6 +239,9 @@ a{
     font-weight: 700;
     color: rgba(0, 0, 0, 1);
 }
+.view{
+    text-align: center;
+}
 /* footer related styles */
 .education-section{
     background-color: rgba(1, 172, 253, 1);
@@ -250,7 +278,8 @@ a{
 @media screen and (max-width: 576px) {
     .navber{
         justify-content: space-between;
-        padding: 0;
+        padding: 20px 20px 20px 0;
+        border-bottom: 5px solid orange;
     }
     .menu {
         display: block;
@@ -258,19 +287,19 @@ a{
     .banner{
         flex-direction: column-reverse;
         text-align: center;
-        padding: 0;
+        padding: 40px 20px;
     }
     .display-none{
         display: none;
     }
     .curriculum{
-        padding: 0;
+        padding: 40px 20px;
     }
     .curriculum-container{
         grid-template-columns: repeat(1,1fr);
     }
     .our-stories{
-        padding: 0;
+        padding: 0 20px 40px 20px;
     }
     .stories{
         flex-direction: column;
