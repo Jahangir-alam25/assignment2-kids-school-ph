@@ -14,6 +14,7 @@
 .display-flex{
     display: flex;
 }
+
 .btn-primary{
     background-color: black;
     border-radius: 12px;
@@ -22,6 +23,9 @@
     border: none;
     font-weight: 600;
     font-size: 1.25rem;
+}
+.btn-color{
+    background-color: orange;
 }
 .linear-gradient-1{
     background-image: linear-gradient(rgba(222, 245, 255, 1), white, white, white,  white);
@@ -78,6 +82,9 @@ marquee{
     text-align: center;
     font-weight: 700;
     font-size: 1.25rem;
+}
+.text-color{
+    color: rgba(128, 128, 128, 1);
 }
 .color-1{
     background-color: aqua;
@@ -196,6 +203,27 @@ marquee{
     text-align: center;
     border-radius: 19px;
 }
+.curriculum-card-title{
+    margin: 32px 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: rgba(32, 32, 32, 1);
+}
+.read-text-1{
+    color: blue;
+    font-weight: 700;
+    margin-top: 33px;
+}
+.read-text-2{
+    color: blueviolet;
+    font-weight: 700;
+    margin-top: 33px;
+}
+.read-text-3{
+    color: brown;
+    font-weight: 700;
+    margin-top: 33px;
+}
 .simbol{
     justify-content: center;
     align-items: center;
@@ -256,7 +284,6 @@ marquee{
     background-color: rgba(1, 172, 253, 1);
     padding: 123px 228px 173px 140px;
     justify-content: space-between;
-    /* gap: 150px; */
 }
 .education{
     gap: 10px;
